@@ -1,10 +1,16 @@
-#include "Camera.cpp"
 
+#include "Camera.cpp"
 int main() {
-    Camera camera;
+    Camera camera(0, "/home/qays/Downloads/Imagry_Logo.jpg");
 
     while (true) {
         camera.captureFrame();
+        camera.extractBlueChannel();
+        camera.removeBlueChannel();
+        camera.convertToGray();
+        camera.addLogoToFrame();
+        camera.splitAndFlipFrame();
+        camera.overlayFPS();
         camera.displayFrame();
 
         if (camera.isEscapeKeyPressed()) {
