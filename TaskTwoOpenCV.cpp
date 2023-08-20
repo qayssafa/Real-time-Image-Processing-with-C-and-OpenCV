@@ -1,5 +1,5 @@
 
-#include "Camera.cpp"
+#include "Camera.h"
 int main() {
     Camera camera(0, "/home/qays/Downloads/Imagry_Logo.jpg");
 
